@@ -1,0 +1,17 @@
+{
+  "name": "scrabble-dabble",
+  "version": "1.0.0",
+  "description": "backend server that talks to stripe services",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "haastrup Elijah",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-defaults": "^2.0.1",
+    "express": "^4.17.1",
+    "stripe": "^8.145.0"
+  }
+}
