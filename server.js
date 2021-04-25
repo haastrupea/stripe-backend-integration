@@ -20,6 +20,9 @@ app.use(express.json());
 
 // Be sure to authenticate the endpoint for creating connection tokens.
 
+app.get('/',(req,res)=>{
+  res.json({status:true,messge:"I am up and running"})
+})
 app.post("/connection_token", async(req, res) => {
 
   let connectionToken = await stripe.terminal.connectionTokens.create();
