@@ -39,4 +39,4 @@ app.post("/capture_payment_intent", async(req, res) => {
 
 })
 
-app.listen(4242, () => console.log('Node server listening on port 4242!'));
+app.listen(process.env.PORT || 4242, () => console.log('Node server listening on port 4242!'));
